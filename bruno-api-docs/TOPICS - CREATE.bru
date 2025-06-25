@@ -1,0 +1,23 @@
+meta {
+  name: TOPICS - CREATE
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseurl}}/api/v3/topics
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cid": 1,
+    "title": "Topik From API",
+    "content": "This is the test topic's content created by api",
+    "tags": [
+      "testapi"
+    ],
+    "_csrf": "3469a4535946ecb018cfd8b32729414aba353dde5ee3e854779a68100cdf7651e23cb6f6fb942f7247fef1cb150aebbfbdd28677dec97305ff5ca770579d8822"
+  }
+}

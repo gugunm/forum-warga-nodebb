@@ -1,0 +1,29 @@
+meta {
+  name: LOGIN
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseurl}}/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "username": "mod1",
+    "password": "mod123",
+    "_csrf": "3469a4535946ecb018cfd8b32729414aba353dde5ee3e854779a68100cdf7651e23cb6f6fb942f7247fef1cb150aebbfbdd28677dec97305ff5ca770579d8822"
+  }
+}
+
+body:multipart-form {
+  username: user1
+  password: user123
+  ~_csrf: bea0ddb7a3ee78e185e359c5e2ffe4aff30756a23759b1fc61bc5f781e94489bc4c5c74d4cd403896428a3100a62daa9ee64a8f68fec8b3d76b80c7dd59d9ecd
+}
