@@ -7,13 +7,17 @@ meta {
 post {
   url: {{baseurl}}/api/v3/topics
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTc1MDg0ODM3OCwiZXhwIjoxNzUyMDU3OTc4LCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQ1NjciLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQ1NjcifQ.S1G4SZNM0FnWWXu7Cm3xoynSHYNPIwfrD9wUIlwRlJs
 }
 
 body:json {
   {
-    "cid": 1,
-    "title": "Topik From API",
+    "cid": 2,
+    "title": "Topik From API JWT",
     "content": "This is the test topic's content created by api",
     "tags": [
       "testapi"

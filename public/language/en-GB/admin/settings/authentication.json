@@ -1,0 +1,24 @@
+{
+  "authentication": "Authentication",
+  "jwt-settings": "JWT Authentication Settings",
+  "jwt-enabled": "Enable JWT Authentication",
+  "jwt-enabled-help": "Enable JWT token-based authentication. This will gradually replace session-based authentication.",
+  "jwt-token-expiry": "JWT Token Expiry (seconds)",
+  "jwt-token-expiry-help": "How long JWT tokens are valid in seconds. Default is 1200 (20 minutes).",
+  "jwt-remember-token-expiry": "Remember Me Token Expiry (days)",
+  "jwt-remember-token-expiry-help": "How long 'remember me' JWT tokens are valid in days. Default is 14 days.",
+
+  "session-settings": "Session Authentication Settings",
+  "session-enabled": "Enable Session Authentication",
+  "session-enabled-help": "Keep session-based authentication enabled for backward compatibility during migration.",
+  "session-duration": "Session Duration (seconds)",
+  "session-duration-help": "How long sessions are valid in seconds. Default is 1200 (20 minutes).",
+  "login-days": "Login Days",
+  "login-days-help": "How long 'remember me' sessions are valid in days. Default is 14 days.",
+
+  "migration-info": "Migration Information",
+  "migration-info-text": "The JWT authentication system is designed to gradually replace session-based authentication:",
+  "migration-info-step1": "Enable JWT authentication while keeping sessions enabled",
+  "migration-info-step2": "Users will automatically get JWT tokens when they log in",
+  "migration-info-step3": "Once all users are migrated, you can disable sessions if desired"
+}
